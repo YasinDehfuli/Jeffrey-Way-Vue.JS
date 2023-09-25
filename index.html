@@ -8,16 +8,28 @@
 <body>
 
 <div id="app">
-    {{ greeting }} {{ greeting.length }}
+    <p>
+        <label>
+            <input type="text" v-model="greeting">
+        </label>
+    </p>
+    <p>
+        {{ greeting }} {{ greeting.length }}
+    </p>
 </div>
 
 <script>
     Vue.createApp({
         data() {
-            return{
-                greeting : 'Hello World'
+            return {
+                greeting: 'Hello World'
             };
+        },
+
+        mounted() {
+            alert('Boom');
         }
+
     }).mount('#app');
 </script>
 
