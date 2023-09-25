@@ -1,6 +1,6 @@
 # Jeffrey-Way-Vue.JS
 <div align="center">
-<image src="https://github.com/vuejs/art/tree/9f8ee218d32b52c2d150212f22798a7a61689361" width="300px" alt="Vue.js"></image>
+<image src="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/512px-Vue.js_Logo_2.svg.png" width="512" alt="Vue.js"></image>
 </div>
 Step By Step Learn Vue.js by Jeffrey Way. 
 
