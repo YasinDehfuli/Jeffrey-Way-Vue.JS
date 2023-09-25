@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js Learn</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<style>
+    html , body {
+        height: 100%;
+    }
+    body{
+        display: grid;
+        place-items: center;
+    }
+
+    .color-red{
+        background-color: red;
+    }
+    .color-gray{
+        background-color: gray;
+    }
+    button{
+        width: 120px;
+        height: 60px;
+        border-radius: 8px;
+        font-size: 22px;
+    }
+</style>
+<body>
+
+<div id="app">
+    <button :class="active ? 'color-red' : 'color-gray' " @click="toggle" > Click Me </button>
+</div>
+
+<script>
+    Vue.createApp({
+        data() {
+            return {
+                active : false
+            };
+        },
+
+        methods: {
+            toggle(){
+                this.active = ! this.active ;
+            }
+        }
+
+    }).mount('#app');
+</script>
+
+</body>
+</html>
