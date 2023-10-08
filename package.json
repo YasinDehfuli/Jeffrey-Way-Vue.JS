@@ -1,0 +1,20 @@
+{
+  "name": "jeffrey-way-vue.js",
+  "version": "1.0.0",
+  "description": "Jeffrey Way Vue.js 3 Step by Step Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx serve & npx json-server assets/step-13/db.json -p 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasinDehfuli/Jeffrey-Way-Vue.JS.git"
+  },
+  "author": "Yasin Dehfuli",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/YasinDehfuli/Jeffrey-Way-Vue.JS/issues"
+  },
+  "homepage": "https://github.com/YasinDehfuli/Jeffrey-Way-Vue.JS#readme"
+}
