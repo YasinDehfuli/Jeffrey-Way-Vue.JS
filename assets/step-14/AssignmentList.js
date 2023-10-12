@@ -6,7 +6,7 @@ export default {
     components: {Assignment , AssignmentTags},
 
     template: `
-    <section class="mt-7 w-80" v-show="show && assignments.length">
+    <section class="mt-7 w-80" v-show="assignments.length">
 
     <div class="flex justify-between items-start ">
     <h1 class="font-bold mb-3">
@@ -16,7 +16,7 @@ export default {
         </span>
     </h1>
     
-    <button v-show="canToggle" @click="show = false" class="text-rose-500">&times;</button>
+    <button v-show="canToggle" @click="$emit('toggle')" class="text-rose-500">&times;</button>
     </div>
     
     <assignment-tags 
@@ -48,7 +48,6 @@ export default {
     data() {
         return {
             currentTag: 'all',
-            show: true
         };
     },
 
